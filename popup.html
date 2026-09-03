@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="popup">
+        <h1>IDENTIFICADOR</h1>
+        <div class="grupoUsuario ocultar">
+            <label class="switch">
+                <input class="switchInput" type="checkbox" />
+                <span class="slider round"></span>
+            </label>
+            <text class="switchText">Usuario</text>
+            <i class="fa-solid fa-pencil" style="color: rgb(99, 230, 190);"></i>
+            <i class="fa-solid fa-trash" style="color: rgb(160, 158, 158);"></i>
+        </div>
+        <br>
+        <button class="botao">
+            <h2>Adicionar</h2>
+        </button>
+    </div>
+    <script>
+        const switchButton = document.querySelector(".switchInput");
+        switchButton.addEventListener('change', (e) => {
+            const isChecked = e.target.checked;
+
+    });
+    </script>
+    <script src="popup.js"></script>
+</body>
+</html>
