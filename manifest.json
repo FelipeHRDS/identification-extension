@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Minha Extensão",
+    "version": "1.0",
+
+    "permissions": [
+        "storage"
+    ],
+
+    "action": {
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
